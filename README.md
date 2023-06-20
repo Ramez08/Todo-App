@@ -2,6 +2,12 @@
 
 This is a simple web application for managing your to-do list. It allows you to add tasks, edit existing tasks, and delete tasks.
 
+## Project Purpose
+
+This project serves as a demonstration of my coding knowledge and skills. It showcases my ability to create a functional web application using HTML, CSS, and JavaScript.
+
+The code for this project was based on the tutorial by [Tyler Potts](https://www.youtube.com/watch?v=MkESyVB4oUw&list=WL&index=2&ab_channel=TylerPotts).
+
 ## Technologies Used
 
 - HTML
@@ -42,4 +48,3 @@ Feel free to contribute to the project by submitting pull requests or reporting 
 ## Acknowledgements
 
 The design and implementation of this to-do list application were inspired by various online tutorials and resources.
-
