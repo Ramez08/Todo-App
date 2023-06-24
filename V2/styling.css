@@ -1,0 +1,237 @@
+/* CSS styles for the to-do list */
+
+:root {
+    /* Color variables */
+    --dark: #374151; /* Dark color */
+    --darker: #1F2937; /* Darker color */
+    --darkest: #111827; /* Darkest color */
+    --gray: #687280; /* Gray color */
+    --light: #EEE; /* Light color */
+    --pink: #EC4899; /* Pink color */
+    --purple: #8B5Cf6; /* Purple color */
+}
+
+* {
+    /* Global styles */
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    /* Applies border-box sizing, removes margins, and sets font family to Arial for all elements */
+}
+
+body {
+    /* Body styles */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: #fff;
+    /* Displays body as a flex container with column direction, sets minimum height to 100% of viewport height, sets background color to dark, and text color to white */
+}
+
+header {
+    /* Header styles */
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    /* Adds padding, sets maximum width to 800px, and centers the header horizontally */
+}
+
+header h1 {
+    /* Header title styles */
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+    /* Sets font size, weight, color, and adds margin to the header title */
+}
+
+#new-task-form {
+    /* New task form styles */
+    display: flex;
+    /* Displays the new task form as a flex container */
+}
+
+input, button {
+    /* Input and button styles */
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    /* Removes default appearance, borders, outlines, and backgrounds from input and button elements */
+}
+
+#new-task-input {
+    /* New task input styles */
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+    /* Sets flex properties, background color, padding, border radius, text color, and font size for the new task input */
+}
+
+#new-task-input::placeholder {
+    /* Placeholder styles for new task input */
+    color: var(--gray);
+    /* Sets the placeholder text color for the new task input */
+}
+
+#new-task-submit {
+    /* New task submit button styles */
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    /* Sets color, font size, font weight, background image, cursor, and transition properties for the new task submit button */
+}
+
+#new-task-submit:hover {
+    /* Hover styles for new task submit button */
+    opacity: 0.8;
+    /* Changes opacity when hovering over the new task submit button */
+}
+
+#new-task-submit:active {
+    /* Active styles for new task submit button */
+    opacity: 0.6;
+    /* Changes opacity when the new task submit button is clicked */
+}
+
+main {
+    /* Main section styles */
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    /* Sets flex properties, maximum width, and centers the main section horizontally */
+}
+
+.task-list {
+    /* Task list styles */
+    padding: 1rem;
+    /* Adds padding to the task list section */
+}
+
+.task-list h2 {
+    /* Task list heading styles */
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+    /* Sets font size, weight, color, and adds margin to the task list heading */
+}
+
+#tasks .task {
+    /* Task element styles */
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    /* Sets display, alignment, background color, padding, border radius, and margin properties for each task element */
+}
+
+#tasks .task .content {
+    /* Task content styles */
+    flex: 1 1 0%;
+    /* Sets flex properties for the content within each task element */
+}
+
+#tasks .task .content .text {
+    /* Task text content styles */
+    color: var(--light);
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    /* Sets text color, font size, width, display, and transition properties for the task text content */
+}
+
+#tasks .task .content .text:not(:read-only) {
+    /* Editable task text content styles */
+    color: var(--pink);
+    /* Sets text color for editable task text content */
+}
+
+#tasks .task .actions {
+    /* Task actions styles */
+    display: flex;
+    margin: 0 -0.5rem;
+    /* Sets display and margin properties for the actions within each task element */
+}
+
+.task .actions button {
+    /* Action button styles within task element */
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+    /* Sets cursor, margin, font size, font weight, text transformation, and transition properties for action buttons within each task element */
+}
+
+.task .actions button:hover {
+    /* Hover styles for action buttons within task element */
+    opacity: 0.8;
+    /* Changes opacity when hovering over action buttons within each task element */
+}
+
+.task .actions button:active {
+    /* Active styles for action buttons within task element */
+    opacity: 0.6;
+    /* Changes opacity when an action button within a task element is clicked */
+}
+
+.task .actions .edit {
+    /* Edit button styles within task element */
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Sets background image for edit button text within each task element */
+}
+
+.task .actions .delete {
+    /* Delete button styles within task element */
+    color: crimson;
+    /* Sets text color for delete button within each task element */
+}
+
+.task .actions .complete {
+    /* Complete button styles within task element */
+    color: limegreen;
+    /* Sets text color for complete button within each task element */
+}
+
+.task .actions .edit {
+    /* Edit button styles within task element */
+    color: var(--pink);
+    /* Sets text color for edit button within each task element */
+}
+
+.task .actions .important {
+    /* Important button styles within task element */
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.signature {
+    /* Signature styles */
+    text-align: right; /* Right align the text */
+    color: white; /* Set the text color */
+    font-family: "Arial"; /* Set the font family */
+    padding-right: 10px;
+    padding-bottom: 10px;
+}

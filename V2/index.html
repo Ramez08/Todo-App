@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="styling.css" /> <!-- External CSS file for styling -->
+    <link rel="shortcut icon" type="x-icon" href="https://cdn.icon-icons.com/icons2/1381/PNG/512/gnometodo_94637.png">
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1> <!-- Main heading for the to-do list -->
+        <form id="new-task-form"> <!-- Form to add a new task -->
+            <input
+                type="text"
+                id="new-task-input"
+                placeholder="What do you have planned?" /> <!-- Input field for entering a new task -->
+            <input
+                type="submit"
+                id="new-task-submit"
+                value="Add task" /> <!-- Submit button for adding a new task -->
+        </form>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2> <!-- Heading for the list of tasks -->
+            <div id="tasks"></div> <!-- Container for displaying the tasks -->
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- External JavaScript file for script logic -->
+    <h6 class="signature">Ramez Ibrahim</h6>
+</body>
+</html>
