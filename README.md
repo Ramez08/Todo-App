@@ -25,7 +25,7 @@ The code for this project was based on the tutorial by [Tyler Potts](https://www
 
 To get started with the application, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/ramez08/todo-app.git`
 2. Open the `index.html` file in your web browser.
 
 ## Usage
